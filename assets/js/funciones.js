@@ -4,8 +4,11 @@
 
 //! Función tradicional
 function saludar ( nombre ) {
-    console.log( arguments );
-    console.log('Hola ' + nombre);
+    // console.log( arguments );
+    // console.log('Hola ' + nombre);
+    return 1;
+
+    console.log('Soy un código que está después del return ') //Esto nunca se va a ejecutar
 }
 //En las funciones tradicionales, o en aquellas en las que aparece la palabra function,
 // se puede utilzar el arguments, que permite ver todos los parámetros indicados en los paréntesis
@@ -31,7 +34,33 @@ const saludarFlecha2 = ( nombre )=> {
 //Pero es recomendable usar los ().
 
 
-saludar( 'Fernando', 40, true, 'Costa Rica' );
-saludar2( 'Stefan' );
-saludarFlecha();
-saludarFlecha2('Melissa');
+const retornoDeSaludar = saludar( 'Fernando', 40, true, 'Costa Rica' );
+// console.log( retornoDeSaludar );
+
+// saludar2( 'Stefan' );
+// saludarFlecha();
+// saludarFlecha2('Melissa');
+
+
+function sumar(a, b) {
+    return a + b;
+}
+
+// const sumar2 = (a, b) => {
+//     return a + b;
+// }
+
+//Si solo tenemos dentro de la función un return, se puede hacer lo siguiente:
+const sumar2 = (a, b) => a + b;
+
+// console.log ( sumar2(3,2) );
+
+function getAleatorio() {
+    return Math.random();
+}
+
+//Transformamos la función anterior en una función de flecha que no tenga llaves/sin return. 
+const getAleatorio2 = () => Math.random();
+
+
+console.log ( getAleatorio2() );
