@@ -43,7 +43,7 @@ console.log(personaje);
 
 
 personaje.casado = true;
-//Si necesitamos a crear una nueva propiedad en el objeto que se va a crear solo en el momento de ejecución...
+//Si necesitamos crear una nueva propiedad en el objeto que se va a crear solo en el momento de ejecución...
 
 
 const entriesPares = Object.entries( personaje );
