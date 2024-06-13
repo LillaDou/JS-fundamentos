@@ -18,6 +18,7 @@ const pedro = {
 // fher.imprimir();
 
 //Esto se debe crear con la palabra new
+//!Constructores para crear nuevas instancias
 function Persona( nombre, edad ) {
     console.log('Se ejecutó esta línea');
 
