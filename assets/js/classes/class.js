@@ -11,9 +11,16 @@ class Persona {
         this.nombre = nombre;
         this.codigo = codigo;
         this.frase = frase;
-
+    }
+    //Métodos o funciones dentro de clases
+    quienSoy() {
+        console.log(`Soy ${ this.nombre } y mi identidad es ${ this.codigo }`);
     }
 
+    miFrase() {
+        this.quienSoy();
+        console.log(`${ this.codigo } dice: ${ this.frase }`);
+    }
 
 }
 
@@ -22,3 +29,7 @@ const ironman = new Persona('Tony Stark', 'Iron Man', 'Soy Iron Man');
 
 console.log(spiderman);
 console.log(ironman);
+
+spiderman.miFrase();
+ironman.miFrase();
+
